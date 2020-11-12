@@ -13,7 +13,7 @@ class AppFixtures extends Fixture
         for ($i = 0; $i < 15; $i++) {
             $article = new Article();
             $article->setTitre("" . $i);
-            $article->setContent("Le numero de cet article est : " . $i);
+            $article->setContent("Le numéro de cet article est : " . $i);
             $article->setUrlAlias("" . $i);
             $article->setPublished(date_create());
             $manager->persist($article);
