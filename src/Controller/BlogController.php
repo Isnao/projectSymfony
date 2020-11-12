@@ -20,8 +20,10 @@ class BlogController extends AbstractController
 
     /**
      * @Route("/post/{id}", name="post")
+     * @param $id
+     * @return Response
      */
-    public function post(int $id): Response
+    public function post($id): Response
     {
         return $this->render('blog/post.html.twig', [
             'id' => $id
