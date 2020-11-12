@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Article;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -13,8 +14,12 @@ class BlogController extends AbstractController
      */
     public function index(): Response
     {
+        $repository = $this->getDoctrine()->getRepository(Article::class);
+
+        $articles = $repository->findLastTen();
+
         return $this->render('blog/index.html.twig', [
-            'message' => 'Page d\'accueil'
+            'articles' => $articles
         ]);
     }
 
@@ -25,8 +30,14 @@ class BlogController extends AbstractController
      */
     public function post($id): Response
     {
+        $repository = $this->getDoctrine()->getRepository(Article::class);
+
+        $articles = $repository->findOneBy(['url_alias' => $id]);
+
         return $this->render('blog/post.html.twig', [
-            'id' => $id
+            'titre' => $articles->getTitre(),
+            'content' => $articles->getContent(),
+            'published' => $articles->getPublished()->format('Y-m-d H:i:s')
         ]);
     }
 }

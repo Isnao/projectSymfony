@@ -3,5 +3,9 @@
 {% block title %}Homepage{% endblock %}
 
 {% block body %}
-    <h1>{{ message }}</h1>
+    {% for a in articles %}
+        <h1>{{ a.getTitre() }}</h1>
+        <p>{{ a.getContent() }}</p>
+        <h6>{{ a.getPublished().format('Y-m-d H:i:s') }}</h6>
+    {% endfor %}
 {% endblock %}
