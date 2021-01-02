@@ -20,7 +20,7 @@ class ArticleRepository extends ServiceEntityRepository
     }
 
 
-    public function findLastTen(): array
+    public function findLastTen(int $page = 1): array
     {
         return $this->createQueryBuilder('a')
             ->orderBy('a.published', 'DESC')
