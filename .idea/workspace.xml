@@ -13,23 +13,47 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:heroku" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da64159c-f221-4251-8a06-05791da5682e" name="Default Changelist" comment="Fin ajout doctrine">
-      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+    <list default="true" id="da64159c-f221-4251-8a06-05791da5682e" name="Default Changelist" comment="logging">
+      <change afterPath="$PROJECT_DIR$/config/packages/stof_doctrine_extensions.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20210103211020.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Security/TokenAuthenticator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/prod/monolog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/prod/monolog.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -41,6 +65,19 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="heroku/master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
@@ -148,6 +185,9 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
+      <path value="$PROJECT_DIR$/vendor/behat/transliterator" />
+      <path value="$PROJECT_DIR$/vendor/stof/doctrine-extensions-bundle" />
+      <path value="$PROJECT_DIR$/vendor/gedmo/doctrine-extensions" />
     </include_path>
   </component>
   <component name="ProjectId" id="1jsdwk3aRCfHwDoIkDUFy1SDiKu" />
@@ -156,6 +196,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql&#10;mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public/build" />
@@ -166,6 +207,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="xml.defaultSchemas" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -199,7 +241,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604596977517</updated>
-      <workItem from="1604596982136" duration="22890000" />
+      <workItem from="1604596982136" duration="33909000" />
+      <workItem from="1609710776767" duration="2172000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1605188880033</created>
@@ -243,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605203812613</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="logging">
+      <created>1609631682747</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1609631682747</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,31 +304,51 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
     <MESSAGE value="Fin tests fonctionnement web server" />
     <MESSAGE value="Fin ajout doctrine" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fin ajout doctrine" />
+    <MESSAGE value="logging" />
+    <MESSAGE value="User" />
+    <option name="LAST_COMMIT_MESSAGE" value="User" />
   </component>
   <component name="WindowStateProjectService">
     <state x="589" y="235" width="734" height="637" key="#Inspections" timestamp="1605202163159">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="589" y="235" width="734" height="637" key="#Inspections/0.28.1920.1052@0.28.1920.1052" timestamp="1605202163159" />
-    <state x="353" y="407" width="1206" height="293" key="#SQL_Dialects" timestamp="1605203801452">
+    <state x="126" y="183" width="1206" height="293" key="#SQL_Dialects" timestamp="1609715382916">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="353" y="407" width="1206" height="293" key="#SQL_Dialects/0.28.1920.1052@0.28.1920.1052" timestamp="1605203801452" />
-    <state x="555" y="215" width="802" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605203788121">
+    <state x="126" y="183" width="1206" height="293" key="#SQL_Dialects/0.28.1920.1052@0.28.1920.1052" timestamp="1609715382916" />
+    <state x="281" y="115" width="802" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609706160781">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="555" y="215" width="802" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1605203788121" />
+    <state x="281" y="115" width="802" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1609706160781" />
     <state x="724" y="356" width="461" height="393" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1609631338403">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
@@ -287,17 +357,33 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="743" y="312" width="426" height="484" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1608698560776" />
-    <state x="555" y="290" width="802" height="528" key="Vcs.Push.Dialog.v2" timestamp="1605203821622">
+    <state width="193" height="477" key="HiddenNamespacesPopup" timestamp="1609704462676">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="555" y="290" width="802" height="528" key="Vcs.Push.Dialog.v2/0.28.1920.1052@0.28.1920.1052" timestamp="1605203821622" />
+    <state width="193" height="477" key="HiddenNamespacesPopup/0.28.1920.1052@0.28.1920.1052" timestamp="1609704462676" />
+    <state x="761" y="276" width="388" height="553" key="NewPhpClassDialog" timestamp="1609715327471">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="761" y="276" width="388" height="553" key="NewPhpClassDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1609715327471" />
+    <state x="795" y="479" width="319" height="148" key="NewPhpFileDialog" timestamp="1609714820670">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="795" y="479" width="319" height="148" key="NewPhpFileDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1609714820670" />
+    <state x="463" y="188" key="SettingsEditor" timestamp="1609706788362">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="463" y="188" key="SettingsEditor/0.28.1920.1052@0.28.1920.1052" timestamp="1609706788362" />
+    <state x="391" y="283" width="802" height="528" key="Vcs.Push.Dialog.v2" timestamp="1609632466337">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="391" y="283" width="802" height="528" key="Vcs.Push.Dialog.v2/0.28.1920.1052@0.28.1920.1052" timestamp="1609632466337" />
     <state x="623" y="254" key="run.anything.popup" timestamp="1605188734577">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="623" y="254" key="run.anything.popup/0.28.1920.1052@0.28.1920.1052" timestamp="1605188734577" />
-    <state x="1090" y="299" width="672" height="678" key="search.everywhere.popup" timestamp="1608704801500">
+    <state x="1090" y="299" width="672" height="678" key="search.everywhere.popup" timestamp="1609708281471">
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
-    <state x="1090" y="299" width="672" height="678" key="search.everywhere.popup/0.28.1920.1052@0.28.1920.1052" timestamp="1608704801500" />
+    <state x="1090" y="299" width="672" height="678" key="search.everywhere.popup/0.28.1920.1052@0.28.1920.1052" timestamp="1609708281471" />
   </component>
 </project>
